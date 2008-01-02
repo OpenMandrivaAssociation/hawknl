@@ -13,6 +13,7 @@ URL:		http://www.hawksoft.com/hawknl/
 Summary:	Hawk Network Library
 Source:		HawkNL168src.zip
 Patch0:		hawknl_makefile.patch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 License:	LGPLv2+
 Group:		System/Libraries
 %description
