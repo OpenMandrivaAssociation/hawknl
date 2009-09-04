@@ -8,7 +8,7 @@
 
 Name:		%name
 Version:	1.68
-Release:	%mkrel 3
+Release:	%mkrel 4
 URL:		http://www.hawksoft.com/hawknl/
 Summary:	Hawk Network Library
 Source:		HawkNL168src.zip
