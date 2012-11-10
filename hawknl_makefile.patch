@@ -1,0 +1,17 @@
+--- HawkNL1.68/src/makefile.linux	2003-12-30 01:06:00.000000000 +0100
++++ HawkNL1.68.n/src/makefile.linux	2007-08-18 00:37:32.000000000 +0200
+@@ -37,10 +37,10 @@
+ 	cp $(OUTPUT) $(LIBDIR)
+ 	cp $(STATIC) $(LIBDIR)
+ 	chmod 755 $(LIBDIR)/$(OUTPUT)
+-	ln -s $(LIBDIR)/$(OUTPUT) $(LIBDIR)/lib$(LIBNAME).so.$(MAJOR_VERSION).$(MINOR_VERSION)
+-	ln -s $(LIBDIR)/$(OUTPUT) $(LIBDIR)/lib$(LIBNAME).so.$(MAJOR_VERSION)
+-	ln -s $(LIBDIR)/$(OUTPUT) $(LIBDIR)/lib$(LIBNAME).so
+-	ln -s $(LIBDIR)/$(OUTPUT) $(LIBDIR)/$(LIBNAME).so
++	cd $(LIBDIR) && ln -s $(OUTPUT) lib$(LIBNAME).so.$(MAJOR_VERSION).$(MINOR_VERSION)
++	cd $(LIBDIR) && ln -s $(OUTPUT) lib$(LIBNAME).so.$(MAJOR_VERSION)
++	cd $(LIBDIR) && ln -s $(OUTPUT) lib$(LIBNAME).so
++	cd $(LIBDIR) && ln -s $(OUTPUT) $(LIBNAME).so
+ 	cp ../include/nl.h $(INCDIR)/nl.h
+ 	chmod 644 $(INCDIR)/nl.h
+ 	@echo ""
