@@ -93,3 +93,29 @@ cd src
 %files -n %sdevelname
 %{_libdir}/libNL.a
 
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 1.68-5mdv2011.0
++ Revision: 619356
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 1.68-4mdv2010.0
++ Revision: 429389
+- rebuild
+
+* Tue Jul 22 2008 Thierry Vignaud <tv@mandriva.org> 1.68-3mdv2009.0
++ Revision: 240831
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Pixel <pixel@mandriva.com>
+    - do not call ldconfig in %%post/%%postun, it is now handled by filetriggers
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Sat Aug 18 2007 Nicolas Vigier <nvigier@mandriva.com> 1.68-1mdv2008.0
++ Revision: 65403
+- Import hawknl
+
