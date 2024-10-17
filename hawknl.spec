@@ -9,7 +9,7 @@
 Name:		%name
 Version:	1.68
 Release:	6
-URL:		http://www.hawksoft.com/hawknl/
+URL:		https://www.hawksoft.com/hawknl/
 Summary:	Hawk Network Library
 Source:		HawkNL168src.zip
 Patch0:		hawknl_makefile.patch
